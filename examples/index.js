@@ -1,4 +1,3 @@
-
 var map = new L.Map("map", {center: [21.733425, -101.541748], zoom: 5});
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -48,6 +47,26 @@ function agregar() {
 				lonRf:-104.347674,
 				lugar: "Colima",
 				descripcion: "Estas en Colima, Bienvenido",
+			},
+			{
+				latitud:17.049933, 
+				longitud:-96.709035,
+				latRi:17.281665,
+				lonRi: -97.682993,
+				latRf:16.157268,
+				lonRf:-95.200451,
+				lugar: "Oaxaca",
+				descripcion: "Estas en Oaxaca, Bienvenido",
+			},
+			{
+				latitud:20.668204,
+				longitud: -103.158062,
+				latRi:20.69157, 
+				lonRi: -103.35396,
+				latRf:20.37477,  
+				lonRf:-104.821953,
+				lugar: "Jalisco",
+				descripcion: "Estas en Jalisco, Bienvenido",
 			}
 		]
 	};
@@ -105,7 +124,7 @@ function agregar() {
 		text += myJSON.Lugares[x].lugar + ", ";
 	}
 	if (!encontrado) {
-		document.getElementById("leyenda").innerHTML = "No se encontró el lugar que escribió"
+		document.getElementById("leyenda").innerHTML = "No se encontró el lugar: ''"+ entrada +"'', verifique si está bien escrito o intente más tarde."
 	;}
 
 };
