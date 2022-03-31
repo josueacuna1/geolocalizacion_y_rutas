@@ -1,4 +1,4 @@
-## Geolocalización utilizando  Leaflet
+## Geolocalización utilizando Leaflet
 
 Bienvenido a una práctica de geolocalización utilizando la librería de  Leaflet, la cual es una librería JavaScript open source ampliamente utilizada para la publicación de mapas en la web.
 
